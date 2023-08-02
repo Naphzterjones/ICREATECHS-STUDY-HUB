@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1; /* Light Gray background */
+  color: #333; /* Dark text color */
+}
+
+header {
+  background-color: #007bff; /* Blue color (similar to airline theme) */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+header h1 {
+  font-size: 48px;
+  font-weight: bold;
+  font-style: italic; /* Italic style for a flight-inspired look */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /*subtle text shadow */
+}
+
+header p {
+  font-style: italic;
+  font-size: 18px;
+}
+
+/* Animation for the header */
+@keyframes headerAnimation {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+header h1,
+header p {
+  animation: headerAnimation 1s ease-in-out;
+}
+
+/* Animation for header background */
+@keyframes headerBgAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.6) 0%, transparent 70%);
+  opacity: 0.8;
+  transform: scale(1);
+  z-index: -1;
+  animation: headerBgAnimation 8s infinite ease-in-out;
+}
+
+/* Button-like styling for header h1 */
+header h1 {
+  cursor: pointer;
+}
+
+header h1:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Subtle animation for the header h1 on hover */
+@keyframes headerH1Animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+header h1:hover {
+  animation: headerH1Animation 0.5s ease-in-out;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background for main content */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  border-radius: 10px; /* Rounded corners for main content */
+}
+
+h2 {
+  color: #007bff; /* Blue color (similar to airline theme) */
+  margin-bottom: 10px;
+  font-style: italic; /* Italic subheadings */
+}
+
+ol, ul {
+  margin-left: 30px;
+}
+
+img {
+  max-width: 100%;
+  border: 10px solid #007bff; /* Blue border (similar to airline theme) */
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #007bff; /* Blue border (similar to airline theme) */
+  padding: 8px;
+  text-align: left;
+}
+
+footer {
+  background-color: #007bff; /* Blue color (similar to airline theme) */
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Style hyperlink in the footer */
+footer a {
+  color: #333; /* Dark text color */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Change hyperlink color on hover */
+footer a:hover {
+  color: #f0f0f0; /* Light gray */
+}
