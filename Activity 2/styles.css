@@ -1,0 +1,90 @@
+/* CSS Variables (Custom Properties) */
+:root {
+    --primary-color: #007BFF;       /* Primary color for buttons and headings */
+    --secondary-color: #0056b3;     /* Secondary color for button hover state */
+    --border-color: #ccc;           /* Border color for form elements */
+    --box-shadow-color: rgba(0, 0, 0, 0.1); /* Box shadow color for forms */
+    --border-radius: 4px;           /* Border radius for form elements */
+    --form-spacing: 20px;           /* Spacing between forms */
+  }
+  
+  /* Global Styles */
+  body {
+    background-color: #f5f5f5;      /* Background color for the body */
+    font-family: Arial, sans-serif;  /* Font family for the entire page */
+    margin: 0;                      /* Remove default margin */
+    padding: 0;                     /* Remove default padding */
+  }
+  
+  /* Form Container Styles */
+  .form-container {
+    max-width: 600px;               /* Maximum width for the form container */
+    margin: 30px auto;              /* Center the form container horizontally */
+    padding: 20px;                  /* Add padding to the form container */
+  }
+  
+  /* Heading Styles */
+  h2 {
+    color: var(--primary-color);    /* Heading color using the primary color */
+    margin-bottom: 20px;            /* Add margin below the heading */
+  }
+  
+  /* Label Styles */
+  label {
+    display: block;                 /* Display labels as blocks to stack them vertically */
+    font-weight: bold;              /* Bold font weight for labels */
+    margin-bottom: 5px;             /* Add margin below the labels */
+  }
+  
+  /* Form Element Styles */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea,
+  select {
+    width: 100%;                   /* Make form elements take the full width */
+    padding: 10px;                 /* Add padding to form elements */
+    border: 1px solid var(--border-color); /* Add border with custom color */
+    border-radius: var(--border-radius);  /* Add border radius to form elements */
+  }
+  
+  /* Button Styles */
+  button {
+    padding: 10px 20px;            /* Add padding to buttons */
+    background-color: var(--primary-color); /* Set primary color as button background */
+    color: #fff;                   /* Text color for buttons */
+    border: none;                  /* Remove button border */
+    border-radius: var(--border-radius);  /* Add border radius to buttons */
+    cursor: pointer;               /* Show pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Add transition to button background color */
+  }
+  
+  /* Button Hover Styles */
+  button:hover {
+    background-color: var(--secondary-color); /* Change background color on hover */
+  }
+  
+  /* Button Focus Styles */
+  button:focus {
+    outline: none;                 /* Remove focus outline */
+    box-shadow: 0 0 4px var(--primary-color); /* Add box shadow on focus */
+  }
+  
+  /* Form Styles */
+  form {
+    background-color: #fff;       /* Background color for forms */
+    padding: 20px;                 /* Add padding to forms */
+    box-shadow: 0 4px 8px var(--box-shadow-color); /* Add box shadow to forms */
+    border-radius: 8px;           /* Add border radius to forms */
+    margin-bottom: var(--form-spacing); /* Add spacing between forms */
+  }
+  
+  /* Optional: Add some basic icon styles */
+  .icon {
+    display: inline-block;         /* Display icons inline with text */
+    width: 20px;                   /* Set width of icons */
+    height: 20px;                  /* Set height of icons */
+    margin-right: 5px;             /* Add margin to the right of icons */
+    vertical-align: middle;        /* Vertically align icons with text */
+  }
+  
